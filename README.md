@@ -10,7 +10,7 @@
 >
 > `🔸`︲**Statut :** Opérationel à 10%. (Modifications à faire)
 >
-> `🔸`︲**Source/Fork :** https://github.com/codewithsadee/vcard-personal-portfolio (MERCI INFINIMENT)
+> `🔸`︲**Source/Fork :** https://github.com/codewithsadee/vcard-personal-portfolio
 >
 > `🌐`︲**Lien :** https://tariq-laab.netlify.app/
 
