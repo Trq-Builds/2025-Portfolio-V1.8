@@ -55,6 +55,7 @@ Aucune dépendance, aucun build : le site est **100 % statique** et prêt à l�
 > [!TIP]
 > Vous trouverez ici la liste de tous les outils, ressources et services utilisés pour la création de ce portfolio.  
 > Les liens correspondants sont accessibles en cliquant sur l’emoji : `🌐`.
+> Liste non définitive soumis à des MaJ.
 
 ---
 
@@ -76,11 +77,6 @@ Aucune dépendance, aucun build : le site est **100 % statique** et prêt à l�
 * `❓` **︲Syntaxe de base Markdown** ︲[`🌐`](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * `🛠️` **︲VMWare** ︲[`🌐`](https://www.vmware.com/)
 * `🔷` **︲VSCodium** ︲[`🌐`](https://vscodium.com/)
-
----
-
-> * `🎚️`︲Nora Player ︲[`🌐`](https://noramusic.netlify.app/)
-> * `🎶`︲Mac DeMarco — 20200229 2 ︲[`🌐`](https://youtu.be/Y_KLjGEQTgY)
 
 --- 
 
