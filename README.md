@@ -71,6 +71,7 @@ Aucune dépendance, aucun build : le site est **100 % statique** et prêt à l�
 
 * `📄` **︲Documents d’annexes fournis**
 * `🤖` **︲GPT-5** ︲[`🌐`](https://chatgpt.com/)
+* `🤖` **︲ClaudeAI** ︲[`🌐`](https://claude.ai/)
 * `🌐` **︲VSCodium** ︲[`🌐`](https://vscodium.com/)
 * `🌐` **︲Netlifly** ︲[`🌐`](https://app.netlify.com/)
 
