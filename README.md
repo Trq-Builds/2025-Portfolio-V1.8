@@ -4,7 +4,7 @@
 
 ---
 
-- `🔻`︲**Version :** 1.1 — Réalisé dans le cadre du **BTS SIO - Option SISR (Épreuve E5, Session 2025)**
+- `🎈`︲**Version :** 1.1 — Réalisé dans le cadre du **BTS SIO - Option SISR (Épreuve E5, Session 2025)**
 
 - `👤`︲**Auteur :** *Trq-Builds*
 
