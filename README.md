@@ -74,7 +74,7 @@ Aucune dépendance, aucun build : le site est **100 % statique** et prêt à l�
 * `🤖` **︲ClaudeAI** ︲[`🌐`](https://claude.ai/)
 * `🌐` **︲VisualStudioCode(IDE)** ︲[`🌐`](https://code.visualstudio.com/)
 * `🌐` **︲Netlifly** ︲[`🌐`](https://app.netlify.com/)
-* `😺` **GitHub Dekstop** ︲[`🌐`](https://github.com/apps/desktop)
+* `😺` **︲GitHub Dekstop** ︲[`🌐`](https://github.com/apps/desktop)
 
   
 --- 
