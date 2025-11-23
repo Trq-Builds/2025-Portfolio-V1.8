@@ -47,18 +47,23 @@ Arborescence ASCII :
 
 ---
 
-Ce projet correspond à la **création d’un portfolio personnel** servant de support à l’épreuve **E5** du BTS SIO.  
-L’objectif est de **présenter les compétences, réalisations et projets** réalisés durant la formation, dans un format web clair, accessible et entièrement statique.
+**Technique :**
 
-- Une **maintenance simplifiée** et une compatibilité maximale,
-- Un **déploiement instantané sur Netlify** sans build ni configuration additionnelle,
-- Une **navigation fluide et accessible** pour le jury.
+* `🧱` `📐` **HTML5 sémantique** avec balises structurantes (`<aside>`, `<article>`, `<section>`).
+* `🎨` `🧩` **CSS3 pur** avec variables personnalisées, Flexbox et Grid Layout.
+* `📱` `💻` `🖥️` **Design responsive** via media queries (4 breakpoints : 580px, 768px, 1024px, 1250px).
+* `🌙` `🎛️` **Thème sombre fixe** avec palette de couleurs cohérente.
+* `⚡` `📜` **JavaScript vanilla** pour navigation et filtres (sans dépendances).
+* `🚀` `🔍` **Optimisé pour le référencement** (structure sémantique, meta tags).
 
-` ⚙️ ` ︲**Technique :**
-- HTML5 sémantique & CSS3 moderne.  
-- Thème sombre en CSS pur.  
-- Design responsive minimaliste.  
-- Hébergement sur [Netlify](https://www.netlify.com/).
+**Architecture :**
+- Fichier CSS **unique** (non modularisé) intégrant responsive et animations.
+- Navigation par onglets avec système de filtrage pour le portfolio.
+- Hébergement prévu sur [Netlify](https://www.netlify.com/) avec déploiement automatique.
+
+**Limitations actuelles :**
+- Section Portfolio vide (en attente de projets...)
+- Thème sombre.
 
 ---
 
