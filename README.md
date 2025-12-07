@@ -1,25 +1,27 @@
-# ` 👤 `︲2025-Portfolio-V1.5
+# ` 👤 `︲2025-Portfolio-V1.6
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/962b7ea2-72d2-44b1-afe4-f0c02d40a9c2/deploy-status)](https://app.netlify.com/projects/tariq-laab/deploys)
 
 ---
 
-- ` 🎈 `︲**Version :** 1.5 — Réalisé dans le cadre du **BTS SIO - Option SISR (Épreuve E5, Session 2025)**
+- ` 🎈 `︲**Version :** 1.6 — Réalisé dans le cadre du **BTS SIO - Option SISR (Épreuve E5, Session 2025)**
 
 - ` 👤 `︲**Auteur :** *Trq-Builds*
 
-- ` 🟧 `︲**Statut :** **SUSPENDU** (Reherche de Solutions en cours... 40%)
+- ` 🟢 `︲**Statut :** **ON**
 
 - ` 🟡 `︲**Source/Fork :** https://github.com/codewithsadee/vcard-personal-portfolio
 
-- ` 🌐 `︲**Lien :** https://tariq-laab.netlify.app (OFF)
+- ` 🌐 `︲**Lien :** https://tariq-laab.netlify.app
 
 ---
 
 ## ` 📘 `︲Description du projet.
 
 ---
-Arborescence ASCII : 
+
+`🔩`︲**Arborescence ASCII :**
+
 ```markdown
 2025-Portfolio-V1.4/
 │
@@ -36,7 +38,8 @@ Arborescence ASCII :
 │   │   ├── logo.ico            # Favicon
 │   │   └── my-avatar.png       # Photo de profil
 │   └── js/
-│       └── script.js           # Scripts principaux
+│       ├──script.js           # Scripts principaux
+|       └── theme-toggle.js    # Mode Jour/Nuit
 │
 ├── index.html                  # Page unique (SPA)
 ├── README.md                   # Documentation
@@ -62,7 +65,7 @@ Arborescence ASCII :
 
 `🚧`︲**Limitations actuelles :**
 - Section Portfolio vide (en attente de projets...)
-- Thème sombre.
+- Responsive à Fix sur téléphone bouton Jour/Nuit mal placé...
 
 ---
 
@@ -97,13 +100,13 @@ Aucune dépendance, aucun build : le site est **100 % statique** et prêt à l�
 
 - ` 📄 ` **︲Documents d’annexes fournis**
 
-- ` 🤖 ` **︲Claude-sonnet-4-5-20250929-thinking-32k** ︲[`🌐`](https://claude.ai/)
+- ` 🤖 ` **︲Claude-sonnet-4-5-`20250929-thinking-32k`** ︲[`🌐`](https://claude.ai/)
 - ` 😺 ` **︲GitHub Dekstop** ︲[`🌐`](https://github.com/apps/desktop)
 - ` 🤖 ` **︲GPT-5** ︲[`🌐`](https://chatgpt.com/)
-- ` 🤖⚡ ` **︲lmarena.ai** ︲[`🌐`](https://lmarena.ai/)
+- ` 🤖 ` **︲lmarena.ai** ︲[`🌐`](https://lmarena.ai/)
 - ` 🌐 ` **︲Netlifly** ︲[`🌐`](https://app.netlify.com/)
 - ` 🌐 ` **︲Code Source:** codewithsadee/vcard-personal-portfolio ︲[`🌐`](https://github.com/codewithsadee/vcard-personal-portfolio)
-- ` 🌐 ` **︲VisualStudioCode (IDE)** ︲[`🌐`](https://code.visualstudio.com/)
+- ` 🌐 ` **︲VisualStudioCode (`IDE`)** ︲[`🌐`](https://code.visualstudio.com/)
 
 --- 
 
