@@ -77,6 +77,8 @@
 > Vous trouverez ici la liste de tous les outils, ressources et services utilisés pour la création de ce portfolio.  
 > Les liens correspondants sont accessibles en cliquant sur l’emoji : `🌐`.
 
+---
+
 - ` 📄 ` **︲Documents d’annexes fournis**
 
 - ` 🤖 ` **︲Claude-3-7-Sonnet -`20250219-Thinking-32K`** ︲[`🌐`](https://claude.ai/)
@@ -93,6 +95,7 @@
 - ` 🌐 ` **︲VisualStudioCode (`IDE`)** ︲[`🌐`](https://code.visualstudio.com/)
 
 --- 
+
 
 
 
