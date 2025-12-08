@@ -64,7 +64,7 @@
 
 * `📱` ︲ **Design responsive**
 
-* `🌙` ︲**Thème sombre fixe** avec palette de couleurs cohérente.
+* `🌙` ︲**Thème clair / sombre** avec palette de couleurs cohérente.
 
 * `📜` ︲**JavaScript vanilla** pour navigation et filtres (sans dépendances).
 
@@ -104,6 +104,7 @@
 - ` 🌐 ` **︲VisualStudioCode** ︲[`🌐`](https://code.visualstudio.com/)
 
 --- 
+
 
 
 
