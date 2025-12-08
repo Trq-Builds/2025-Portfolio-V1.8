@@ -34,7 +34,7 @@
 │   │   ├── icon-quote.svg
 │   │   ├── logo.ico           # Favicon (Icône affichée dans l'onglet du navigateur)
 │   │   ├── logo.svg           # Logo vectoriel
-│   │   ├── my-avatar.png      # Ta photo de profil (Sidebar)
+│   │   ├── my-avatar.png      # Photo de profil (Sidebar)
 │   │   ├── project-1.svg      # Images miniatures des projets Portfolio
 │   │   └── project-2.svg
 │   └── js
@@ -102,6 +102,7 @@
 - ` 🌐 ` **︲VisualStudioCode (`IDE`)** ︲[`🌐`](https://code.visualstudio.com/)
 
 --- 
+
 
 
 
