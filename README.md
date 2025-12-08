@@ -1,6 +1,10 @@
 # ` 👤 `︲2025-Portfolio-V1.8
 
-<center>[![Netlify Status](https://api.netlify.com/api/v1/badges/962b7ea2-72d2-44b1-afe4-f0c02d40a9c2/deploy-status)](https://app.netlify.com/projects/tariq-laab/deploys)</center>
+<p align="center">
+  <a href="https://app.netlify.com/projects/tariq-laab/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/962b7ea2-72d2-44b1-afe4-f0c02d40a9c2/deploy-status" alt="Netlify Status">
+  </a>
+</p>
 
 ---
 
@@ -101,6 +105,7 @@
 - ` 🌐 ` **︲VisualStudioCode** ︲[`🌐`](https://code.visualstudio.com/)
 
 --- 
+
 
 
 
