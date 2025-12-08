@@ -1,5 +1,7 @@
 # ` 👤 `︲2025-Portfolio-V1.8
 
+---
+
 <p align="center">
   <a href="https://tariq-laab.netlify.app">
     <img src="https://img.shields.io/website?url=https://tariq-laab.netlify.app&label=site&style=for-the-badge" alt="Site Status">
@@ -103,6 +105,7 @@
 - ` 🌐 ` **︲VisualStudioCode** ︲[`🌐`](https://code.visualstudio.com/)
 
 --- 
+
 
 
 
