@@ -44,10 +44,10 @@
 │   │   ├── project-1.svg      # Images miniatures des projets Portfolio
 │   │   └── project-2.svg
 │   └── js
-│       ├── data.js            # Base de données (Textes, CV, Projets) -> C'est ici que tu modifies le contenu
+│       ├── data.js            # Base de données (Textes, CV, Projets)
 │       ├── main.js            # Moteur du site : Génère le HTML, gère la navigation et les filtres
-│       ├── script.js          # Fichier script secondaire (ou backup/ancien code)
-│       └── theme-toggle.js    # Gestion du bouton Jour/Nuit (si non intégré directement dans index.html)
+│       ├── script.js          # Fichier script secondaire
+│       └── theme-toggle.js    # Gestion du bouton Jour/Nuit
 ├── .gitignore                 # Liste des fichiers ignorés par Git
 ├── index.html                 # Structure principale (Le squelette de la page qui reçoit le contenu)
 ├── index.txt                  # Fichier texte (Notes, brouillon ou contenu brut)
@@ -104,6 +104,7 @@
 - ` 🌐 ` **︲VisualStudioCode** ︲[`🌐`](https://code.visualstudio.com/)
 
 --- 
+
 
 
 
