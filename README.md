@@ -33,11 +33,6 @@
 │   ├── css
 │   │   └── style.css          # Feuille de style principale (Design, Layout & Thème sombre)
 │   ├── images
-│   │   ├── icon-app.svg       # Icônes pour la section Services
-│   │   ├── icon-design.svg
-│   │   ├── icon-dev.svg
-│   │   ├── icon-photo.svg
-│   │   ├── icon-quote.svg
 │   │   ├── logo.ico           # Favicon (Icône affichée dans l'onglet du navigateur)
 │   │   ├── logo.svg           # Logo vectoriel
 │   │   ├── my-avatar.png      # Photo de profil (Sidebar)
@@ -110,6 +105,7 @@
 - ` 🌐 ` **︲VisualStudioCode** ︲[`🌐`](https://code.visualstudio.com/)
 
 --- 
+
 
 
 
