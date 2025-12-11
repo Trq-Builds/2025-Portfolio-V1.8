@@ -24,8 +24,6 @@
 
 ## ` 📘 `︲Documentation du projet.
 
----
-
 `🌵`︲**Arborescence `ASCII` :**
 
 ```markdown
@@ -219,6 +217,7 @@ style.css
 - ` 🌐 ` **︲VisualStudioCode** ︲[`🌐`](https://code.visualstudio.com/)
 
 --- 
+
 
 
 
