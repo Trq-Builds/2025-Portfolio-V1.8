@@ -22,7 +22,7 @@
 
 ---
 
-## ` 📘 `︲Documentation du projet.
+# ` 📘 `︲Documentation du projet.
 
 ---
 
@@ -67,7 +67,7 @@
 
 --- 
 
-`🏗️`︲**Architecture du Projet :**
+# `🏗️`︲**Architecture du Projet :**
 
 ```markdown
 ┌─────────────────────────────────────────────────────────────────┐
@@ -91,9 +91,7 @@
 
 --- 
 
-`📁`︲ **Analyse par Fichier** : 
-
-**Couche Présentation (HTML/CSS) :**
+# `📁`︲ **Analyse par Fichier** : 
 
 ```markdown
 index.html
@@ -110,7 +108,7 @@ style.css
 ```
 --- 
 
-`📐`︲**Couche Logique (JavaScript) :**
+# `📐`︲**Couche Logique (JavaScript) :**
 
 | Fichier | Rôle | Pattern |
 |---------|------|---------|
@@ -121,7 +119,7 @@ style.css
 
 --- 
 
-`🔀`︲**Flux de Données :**
+# `🔀`︲**Flux de Données :**
 
 ```
 ┌──────────┐      ┌──────────┐      ┌──────────┐      ┌──────────┐
@@ -138,7 +136,7 @@ style.css
 
 --- 
 
-`⚙️`︲**Fonctionnalités Techniques :**
+# `⚙️`︲**Fonctionnalités Techniques :**
 
 ```markdown
 // Pseudo-code des fonctionnalités principales
@@ -166,7 +164,7 @@ style.css
 
 ---
 
-`🚀` ︲**Technique Résumée :**
+# `🚀` ︲**Technique Résumée :**
 
 ```markdown
 ╔═══════════════════════════════════════════╗
@@ -186,7 +184,7 @@ style.css
 
 --- 
 
-`🔶`︲**Améliorations prévues :**
+# `🔶`︲**Améliorations prévues :**
 
 - ` 🟡 `︲**Section Portfolio à remplir avec les projets...**
 
@@ -198,7 +196,7 @@ style.css
 
 ---
 
-## ` 🧰 `︲Outils et Ressources utilisés.
+# ` 🧰 `︲Outils et Ressources utilisés.
 
 ---
 
@@ -221,5 +219,6 @@ style.css
 - ` 🌐 ` **︲VisualStudioCode** ︲[`🌐`](https://code.visualstudio.com/)
 
 --- 
+
 
 
