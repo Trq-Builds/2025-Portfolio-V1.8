@@ -194,7 +194,7 @@ style.css
 
 ---
 
-## ` 🧰 `︲Outils et Ressources utilisés.
+## ` 🧰 `︲Outils et Ressources utilisés :
 
 ---
 
@@ -224,6 +224,7 @@ Notes :
 + Ajout de TypeScript pour typage
 + Tests unitaires (Jest)
 + Versioning des assets (cache busting)
+
 
 
 
