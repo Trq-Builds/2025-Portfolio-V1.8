@@ -12,11 +12,11 @@
 
 - ` 🎈 `︲**Version :** 1.8︲Réalisé dans le cadre du **BTS SIO - Option SISR (`Épreuve E5, Session 2026`)**
 
-- ` 👤 `︲**Auteur :** *Trq-Builds*
+- ` 👤 `︲**Auteur :** *`Trq-Builds`*
 
 - ` 🟢 `︲**Statut :** **`ON`**
 
-- ` 🟡 `︲**Source/Fork :** https://github.com/codewithsadee/vcard-personal-portfolio
+- ` 🟤 `︲**Source/Fork :** https://github.com/codewithsadee/vcard-personal-portfolio
 
 - ` 🌐 `︲**Lien :** https://tariq-laab.netlify.app
 
@@ -26,7 +26,7 @@
 
 ---
 
-`🌿`︲**Arborescence ASCII :**
+`🌵`︲**Arborescence ASCII :**
 
 ```markdown
 ├── assets
@@ -59,7 +59,7 @@
 
 * `📱` ︲ **Design responsive**
 
-* `🌙` ︲**Thème clair / sombre** avec palette de couleurs cohérente.
+* `🌙` ︲**Thème Clair / Sombre** : bouton toggle et palette de couleurs cohérente.
 
 * `📜` ︲**JavaScript vanilla** pour navigation et filtres (sans dépendances).
 
@@ -71,18 +71,19 @@
 
 - `📐`︲**Navigation par onglets avec système de filtrage pour le portfolio.**
 
-- ` 🟢 `︲Hébergement prévu sur [Netlify](https://www.netlify.com/) **avec déploiement / Maj ultra rapide.**
+- ` 🟢 `︲**Hébergement prévu sur** [Netlify](https://www.netlify.com/) **avec déploiement / MaJ ultra rapide.**
 
 --- 
 
 `🔶`︲**Améliorations prévues :**
+
 - ` 🟡 `︲**Section Portfolio à remplir avec les projets...**
 
 - ` 🟡 `︲**Rendre la section Projets plus Jolie...**
 
 - ` 🟡 `︲**Rajouter une Rublique "Stage".**
 
-- ` 🟡 `︲**Ajout des Items suivants : TP-DNS, TP-KALI, Item-GLPI, Install Debian, Install Windows Server, dans la section "Projets" avec Documentation Technique .MD pour chaque Item.**
+- ` 🟡 `︲**Ajout des Items suivants : TP-DNS, TP-KALI, Item-GLPI, Install-Debian, Install-Windows Server, dans la section "Projets" avec Documentation Technique .MD pour chaque Item.**
 
 ---
 
@@ -91,7 +92,7 @@
 ---
 
 > [!TIP]
-> Vous trouverez ici la liste de tous les outils, ressources et services utilisés pour la création de ce portfolio.  
+> Vous trouverez ici la liste de tous les outils, ressources et services utilisés pour la création de ce Portfolio.  
 > Les liens correspondants sont accessibles en cliquant sur l’emoji : `🌐`.
 
 ---
@@ -105,10 +106,11 @@
 - ` 🤖 ` **︲GPT-5.1** ︲[`🌐`](https://chatgpt.com/)
 - ` 🤖 ` **︲lmarena.ai** ︲[`🌐`](https://lmarena.ai/)
 - ` 🌐 ` **︲Netlifly** ︲[`🌐`](https://app.netlify.com/)
-- ` 🌐 ` **︲Repo Tree Generator** ︲[`🌐`](https://ascii-repotree.vercel.app/generator)
+- ` 🌐 ` **︲RepoTreeGenerator** ︲[`🌐`](https://ascii-repotree.vercel.app/generator)
 - ` 🌐 ` **︲VisualStudioCode** ︲[`🌐`](https://code.visualstudio.com/)
 
 --- 
+
 
 
 
