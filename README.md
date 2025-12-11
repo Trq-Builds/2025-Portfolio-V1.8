@@ -218,14 +218,15 @@ style.css
 ---
 
 Notes pour moi :
-+ Minification CSS/JS (build process)
+`+ Minification CSS/JS (build process)
 + Lazy loading des images
 + Service Worker (PWA)
 + Ajout de TypeScript pour typage
 + Tests unitaires (Jest)
-+ Versioning des assets (cache busting)
++ Versioning des assets (cache busting)`
 
 ---
+
 
 
 
