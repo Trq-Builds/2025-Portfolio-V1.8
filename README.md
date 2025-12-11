@@ -22,56 +22,153 @@
 
 ---
 
-## ` 📘 `︲Description du projet.
+## ` 📘 `︲Documentation du projet.
 
 ---
 
-`🌵`︲**Arborescence ASCII :**
+`🌵`︲**Arborescence `ASCII` :**
 
 ```markdown
-├── assets
-│   ├── css
-│   │   └── style.css          # Feuille de style principale (Design, Layout & Thème sombre)
-│   ├── images
-│   │   ├── logo.ico           # Favicon (Icône affichée dans l'onglet du navigateur)
-│   │   ├── logo.svg           # Logo vectoriel
-│   │   ├── my-avatar.png      # Photo de profil (Sidebar)
-│   │   ├── project-1.svg      # Images miniatures des projets Portfolio
-│   │   └── project-2.svg
-│   └── js
-│       ├── data.js            # Base de données (Textes, CV, Projets)
-│       ├── main.js            # Moteur du site : Génère le HTML, gère la navigation et les filtres
-│       ├── script.js          # Fichier script secondaire
-│       └── theme-toggle.js    # Gestion du bouton Jour/Nuit
-├── .gitignore                 # Liste des fichiers ignorés par Git
-├── index.html                 # Structure principale (Le squelette de la page qui reçoit le contenu)
-├── index.txt                  # Fichier texte (Notes, brouillon ou contenu brut)
-└── README.md                  # Documentation du projet pour le dépôt GitHub
+├── assets                     # 📦︲Dossier contenant toutes les ressources du site.
+│   │
+│   ├── css                    # 🎨︲Dossier des styles visuels.
+│   │   └── style.css          # Fichier qui définit les couleurs, polices et mise en page.
+│   │
+│   ├── images                 # 🖼️︲Dossier des images.
+│   │   ├── logo.ico           # Petite icône visible dans l'onglet du navigateur.
+│   │   ├── logo.svg           # Logo du site (format haute qualité).
+│   │   ├── my-avatar.png      # Ma photo de profil affichée sur le côté.
+│   │   ├── project-1.svg      # Image illustrant le projet n°1.
+│   │   └── project-2.svg      # Image illustrant le projet n°2.
+│   │
+│   └── js                     # ⚙️︲Dossier des scripts (le "cerveau" du site).
+│       ├── data.js            # Contient tous les textes et informations (CV, projets...).
+│       ├── main.js            # Programme principal qui construit et anime le site.
+│       ├── script.js          # Gère les clics et interactions utilisateur.
+│       └── theme-toggle.js    # Permet de passer du mode clair au mode sombre.
+│
+├── .gitignore                 # Liste des fichiers à ne pas envoyer sur GitHub.
+├── index.html                 # Page principale du site (la base sur laquelle tout s'affiche).
+├── index.txt                  # Notes personnelles / brouillon.
+└── README.md                  # Mode d'emploi du projet pour les visiteurs GitHub.
 ```
 
 ---
 
 `🪚`︲**Technique :**
 
-* `📐` ︲**HTML5 sémantique** avec balises structurantes.
+--- 
 
-* `🎨` ︲**CSS3 PUR**
-
-* `📱` ︲ **Design responsive**
-
-* `🌙` ︲**Thème Clair / Sombre** : bouton toggle et palette de couleurs cohérente.
-
-* `📜` ︲**JavaScript vanilla** pour navigation et filtres (sans dépendances).
+`🏗️`︲**Architecture du Projet**
+```markdown
+┌─────────────────────────────────────────────────────────────────┐
+│                        index.html                                │
+│                    (Squelette / Shell)                          │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                         ASSETS                                   │
+├───────────────┬───────────────────┬─────────────────────────────┤
+│      CSS      │       JS          │         IMAGES              │
+│   (Style)     │    (Logique)      │       (Médias)              │
+├───────────────┼───────────────────┼─────────────────────────────┤
+│ style.css     │ main.js ──────────│─→ Moteur principal          │
+│ (Thème dark/  │ data.js ──────────│─→ Base de données           │
+│  light,       │ script.js ────────│─→ Interactions UI           │
+│  responsive)  │ theme-toggle.js ──│─→ Switch thème              │
+└───────────────┴───────────────────┴─────────────────────────────┘
+```
 
 --- 
 
-`🧱`︲**Architecture :**
+`📁`︲ **Analyse par Fichier** : 
+- Couche Présentation (HTML/CSS) : 
+```markdown
+index.html
+├── Structure sémantique HTML5
+├── Points d'ancrage pour injection JS (id="...")
+└── Conteneurs vides remplis dynamiquement
 
-- `🎨`︲Fichier CSS **unique** (non modularisé) intégrant responsive et animations.
+style.css
+├── Variables CSS (--custom-properties) pour le theming
+├── Layout Flexbox/Grid
+├── Media Queries (Responsive Design)
+├── Transitions & Animations
+└── Thème sombre par défaut
+```
+--- 
 
-- `📐`︲**Navigation par onglets avec système de filtrage pour le portfolio.**
+`📐`︲**Couche Logique (JavaScript) :**
 
-- ` 🟢 `︲**Hébergement prévu sur** [Netlify](https://www.netlify.com/) **avec déploiement / MaJ ultra rapide.**
+| Fichier | Rôle | Pattern |
+|---------|------|---------|
+| `main.js` | Génération dynamique du DOM, routage SPA, filtres | **Controller** |
+| `data.js` | Stockage des textes, projets, expériences | **Model** (JSON-like) |
+| `script.js` | Événements UI (accordéons, modals, etc.) | **Event Handler** |
+| `theme-toggle.js` | Persistance thème (localStorage) | **State Manager** |
+
+--- 
+
+`📐`︲**Flux de Données :**
+
+```
+┌──────────┐      ┌──────────┐      ┌──────────┐      ┌──────────┐
+│ data.js  │ ───► │ main.js  │ ───► │   DOM    │ ◄─── │ style.css│
+│ (Données)│      │ (Rendu)  │      │ (Affichage)     │ (Design) │
+└──────────┘      └──────────┘      └──────────┘      └──────────┘
+                       │
+                       ▼
+              ┌────────────────┐
+              │  script.js     │
+              │ (Interactions) │
+              └────────────────┘
+```
+
+--- 
+
+`⚙️`︲**Fonctionnalités Techniques :**
+
+```markdown
+// Pseudo-code des fonctionnalités principales
+
+├── 🎨 Theme Toggle.
+│   ├── Détection préférence système (prefers-color-scheme).
+│   ├── Sauvegarde localStorage.
+│   └── Toggle class sur <body>.
+
+├── 📄 Navigation SPA.
+│   ├── Pas de rechargement de page.
+│   ├── Injection HTML dynamique.
+│   └── Gestion des sections (About, Resume, Projects, Contact).
+
+├── 🔍 Système de Filtres (Portfolio).
+│   ├── Filtrage par catégorie.
+│   └── Animation de transition.
+
+└── 📱 Responsive Design.
+    ├── Mobile First (ou Desktop First).
+    ├── Breakpoints multiples.
+    └── Sidebar collapsible.
+
+```
+🚀 ︲Stack Technique Résumée : 
+
+```markdown
+╔═══════════════════════════════════════════╗
+║            FRONTEND STACK                  ║
+╠═══════════════════════════════════════════╣
+║  HTML5    │  Structure sémantique          ║
+║  CSS3     │  Custom Properties + Flexbox   ║
+║  JS ES6+  │  Modules, DOM API, localStorage║
+╠═══════════════════════════════════════════╣
+║            INFRASTRUCTURE                  ║
+╠═══════════════════════════════════════════╣
+║  Netlify  │  CDN + HTTPS + Deploy auto    ║
+║  Git      │  Versioning                    ║
+╚═══════════════════════════════════════════╝
+
+```
 
 --- 
 
@@ -110,6 +207,7 @@
 - ` 🌐 ` **︲VisualStudioCode** ︲[`🌐`](https://code.visualstudio.com/)
 
 --- 
+
 
 
 
