@@ -54,12 +54,12 @@
     </aside>
 
     <!-- ============== MAIN CONTENT ============== -->
-       <div class="main-content">
+    <div class="main-content">
 
       <!-- 1. LA NAVBAR (DOIT ÊTRE EN PREMIER) -->
       <nav class="navbar">
         <ul class="navbar-list">
-            <!-- Généré par JS -->
+          <!-- Généré par JS -->
         </ul>
       </nav>
 
@@ -71,7 +71,7 @@
 
         <!-- Le texte injecté par JS ira ici -->
         <div class="about-text"></div>
-      </article> <!-- ATTENTION : C'est cette fermeture qui manquait peut-être -->
+      </article>
 
       <!-- 3. PAGE PARCOURS -->
       <article class="resume" data-page="resume">
@@ -85,7 +85,7 @@
             <h3 class="h3">Formation</h3>
           </div>
           <ol class="timeline-list education-list">
-             <!-- Injecté par JS -->
+            <!-- Injecté par JS -->
           </ol>
         </section>
 
@@ -95,19 +95,34 @@
             <h3 class="h3">Expériences</h3>
           </div>
           <ol class="timeline-list experience-list">
-             <!-- Injecté par JS -->
+            <!-- Injecté par JS -->
           </ol>
         </section>
 
         <section class="skill">
           <h3 class="h3 skills-title">Compétences</h3>
           <ul class="skills-list content-card">
-             <!-- Injecté par JS -->
+            <!-- Injecté par JS -->
           </ul>
         </section>
       </article>
 
-      <!-- 4. PAGE PORTFOLIO -->
+      <!-- 4. PAGE OUTILS -->
+      <article class="outils" data-page="outils">
+        <header>
+          <h2 class="h2 article-title">Outils</h2>
+        </header>
+
+        <section class="tools">
+          <p class="section-text">
+            Découvrez les outils et ressources que j'utilise au quotidien pour mon organisation et mes projets informatiques.
+          </p>
+          
+          <ul class="tools-list"></ul>
+        </section>
+      </article>
+
+      <!-- 5. PAGE PORTFOLIO -->
       <article class="portfolio" data-page="portfolio">
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -120,40 +135,43 @@
       </article>
 
     </div>
+  </main>
 
   <!-- ============== SCRIPTS ============== -->
-<script type="module" src="./assets/js/main.js"></script>
+  <script type="module" src="./assets/js/main.js"></script>
 
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<script>
-  // ================= THEME TOGGLE =================
-  const themeToggle = document.getElementById('themeToggle');
+  <script>
+    // ================= THEME TOGGLE =================
+    const themeToggle = document.getElementById('themeToggle');
 
-  // Charger le thème
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    document.body.classList.add('dark-mode');
-  }
+    // Charger le thème
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
 
-  // Toggle
-  themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+    // Toggle
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
 
-    // Sauvegarde
-    localStorage.setItem(
-      'theme',
-      document.body.classList.contains('dark-mode') ? 'dark' : 'light'
-    );
-  });
+      // Sauvegarde
+      localStorage.setItem(
+        'theme',
+        document.body.classList.contains('dark-mode') ? 'dark' : 'light'
+      );
+    });
 
-  // Animation
-  themeToggle.addEventListener('mouseenter', () => {
-    themeToggle.style.transform = 'scale(1.15) rotate(10deg)';
-  });
+    // Animation
+    themeToggle.addEventListener('mouseenter', () => {
+      themeToggle.style.transform = 'scale(1.15) rotate(10deg)';
+    });
 
-  themeToggle.addEventListener('mouseleave', () => {
-    themeToggle.style.transform = 'scale(1) rotate(0deg)';
-  });
-</script>
+    themeToggle.addEventListener('mouseleave', () => {
+      themeToggle.style.transform = 'scale(1) rotate(0deg)';
+    });
+  </script>
+</body>
+</html>

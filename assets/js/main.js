@@ -1,8 +1,9 @@
 /*-----------------------------------*\
-  #MAIN.JS - Version Finale Corrigée
+  #MAIN.JS - Version avec Outils
 \*-----------------------------------*/
 
-import { profileData, aboutData, resumeData, portfolioData } from './data.js';
+// ← MODIFIÉ : Ajout de outilsData dans l'import
+import { profileData, aboutData, resumeData, outilsData, portfolioData } from './data.js';
 
 // --- 1. FONCTIONS UTILITAIRES ---
 const getElement = (selector) => document.querySelector(selector);
@@ -17,22 +18,23 @@ const render = (selector, html) => {
   }
 };
 
-// --- 2. GENERATION NAVBAR (Le correctif manquant) ---
+// --- 2. GENERATION NAVBAR ---
 function loadNavbar() {
-  // Liste des pages basées sur tes <article data-page="...">
+  // ← MODIFIÉ : Ajout de "Outils" dans la navigation
   const pages = [
     { label: "À propos", id: "about" },
     { label: "Parcours", id: "resume" },
+    { label: "Outils", id: "outils" },  // ← NOUVELLE LIGNE
     { label: "Portfolio", id: "portfolio" }
   ];
 
   const navHTML = pages.map((page, index) => `
-  <li class="navbar-item">
+    <li class="navbar-item">
       <button class="navbar-link ${index === 0 ? 'active' : ''}" data-nav-link="${page.id}">
-          ${page.label}
+        ${page.label}
       </button>
-  </li>
-`).join('');
+    </li>
+  `).join('');
 
   render('.navbar-list', navHTML);
 }
@@ -81,12 +83,10 @@ function loadProfile() {
 // --- 4. INJECTION CONTENU ---
 function loadAbout() {
   render('.about-text', aboutData.text);
-
-  ;
 }
 
 function loadResume() {
-  // Education (Attention au sélecteur CSS class)
+  // Education
   const eduHTML = resumeData.education.map(item => `
     <li class="timeline-item">
       <h4 class="h4 timeline-item-title">${item.school}</h4>
@@ -94,7 +94,7 @@ function loadResume() {
       <p class="timeline-text">${item.desc}</p>
     </li>
   `).join('');
-  render('.education-list', eduHTML); // Doit matcher <ol class="timeline-list education-list">
+  render('.education-list', eduHTML);
 
   // Expérience
   const expHTML = resumeData.experience.map(item => `
@@ -119,6 +119,31 @@ function loadResume() {
     </li>
   `).join('');
   render('.skills-list', skillsHTML);
+}
+
+// ← NOUVELLE FONCTION : Chargement des Outils
+function loadOutils() {
+  const outilsHTML = outilsData.map(category => `
+    <li class="tools-category">
+      <div class="title-wrapper">
+        <div class="icon-box"><ion-icon name="${category.icon}"></ion-icon></div>
+        <h3 class="h3">${category.title}</h3>
+      </div>
+      <ul class="tools-items">
+        ${category.items.map(item => `
+          <li class="tool-item">
+            <div class="tool-content">
+              <h4 class="h4">${item.name}</h4>
+              <p class="tool-description">${item.description}</p>
+              ${item.link ? `<a href="${item.link}" class="tool-link" target="_blank">Voir le site <ion-icon name="open-outline"></ion-icon></a>` : ''}
+            </div>
+          </li>
+        `).join('')}
+      </ul>
+    </li>
+  `).join('');
+  
+  render('.tools-list', outilsHTML);
 }
 
 function loadPortfolio() {
@@ -152,7 +177,6 @@ function loadPortfolio() {
 }
 
 // --- 5. LOGIQUE D'INTERACTION ---
-
 function setupNavigation() {
   const navLinks = document.querySelectorAll('[data-nav-link]');
   const pages = document.querySelectorAll('[data-page]');
@@ -161,7 +185,7 @@ function setupNavigation() {
 
   navLinks.forEach(link => {
     link.addEventListener('click', function () {
-      const target = this.dataset.navLink.toLowerCase(); // ex: 'resume'
+      const target = this.dataset.navLink.toLowerCase();
       console.log("Clic sur :", target);
 
       // 1. Activer le bouton
@@ -173,7 +197,6 @@ function setupNavigation() {
       pages.forEach(page => {
         const pageName = page.dataset.page.toLowerCase();
         
-        // ASTUCE : On vérifie si ça correspond, OU si c'est le cas spécial Parcours/Resume
         if (pageName === target || (target === 'resume' && pageName === 'parcours')) {
           page.classList.add('active');
           window.scrollTo(0, 0);
@@ -223,16 +246,14 @@ function setupSidebar() {
 
 // --- INIT ---
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. D'abord on charge la navbar
   loadNavbar();
-
-  // 2. Ensuite le contenu
   loadProfile();
   loadAbout();
   loadResume();
+  loadOutils();  // ← NOUVELLE LIGNE : Chargement des outils
   loadPortfolio();
-
-  // 3. Enfin on active les écouteurs d'événements (après que le HTML soit généré)
+  
   setupNavigation();
   setupSidebar();
 });
+

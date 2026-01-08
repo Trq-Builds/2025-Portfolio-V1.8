@@ -13,7 +13,7 @@
 
   /* Text & Bordures */
   --text-primary: hsl(60, 3%, 8%);
-  --text-secondary: hsl(30, 5%, 60%);
+  --text-secondary: hsl(0, 0%, 0%); /* Noir complet */
   --border-color: hsl(40, 9%, 65%);
 
   /* Accents */
@@ -654,7 +654,7 @@ body.dark-mode .theme-toggle .moon {
 
 .filter-item button:hover,
 .filter-item button.active {
-  color: var(--text-primary);
+  color: var(--highlight); /* Jaune doré */
 }
 
 /*-----------------------------------*\
@@ -706,6 +706,94 @@ body.dark-mode .content-card {
 .content-card:hover {
   transform: translateY(-5px);
 }
+
+/*-----------------------------------*\
+  #OUTILS (TOOLS)
+\*-----------------------------------*/
+
+.tools-list {
+  display: grid;
+  gap: 30px;
+}
+
+.tools-category {
+  background: var(--bg-body);
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+}
+
+body.dark-mode .tools-category {
+  background: var(--bg-card-hover);
+}
+
+.tools-category .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tools-items {
+  display: grid;
+  gap: 15px;
+  margin-left: 45px;
+}
+
+.tool-item {
+  padding: 15px;
+  background: var(--bg-card);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.tool-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-2);
+}
+
+.tool-content h4 {
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.tool-description {
+  color: hsl(0, 0%, 0%);
+  font-size: var(--fs-small);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .tool-description {
+  color: var(--text-secondary);
+}
+
+.tool-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--highlight);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-500);
+  transition: var(--transition);
+}
+
+.tool-link:hover {
+  color: var(--accent-color);
+}
+
+.tool-link ion-icon {
+  font-size: 16px;
+}
+
+.section-text {
+  color: var(--text-primary);
+  font-size: var(--fs-4);
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
 
 /*-----------------------------------*\
   #RESPONSIVE LAYOUT (Media Queries start here)
@@ -997,3 +1085,4 @@ article.active {
     margin-top: 10px;
   }
 }
+

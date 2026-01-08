@@ -53,6 +53,85 @@ export const resumeData = {
   ]
 };
 
+
+// ========== NOUVELLE SECTION : OUTILS ==========
+export const outilsData = [
+  {
+    title: "Intelligence Artificielle",
+    icon: "sparkles-outline",
+    items: [
+      {
+        name: "Claude 3.7 Sonnet",
+        description: "Assistant IA pour la rédaction, le code et l'analyse technique.",
+        link: "https://claude.ai/"
+      },
+      {
+        name: "ChatGPT-5.1",
+        description: "IA conversationnelle pour recherche et brainstorming.",
+        link: "https://chatgpt.com/"
+      },
+      {
+        name: "Gemini 3.0 PRO",
+        description: "IA de Google pour analyse de documents et recherche.",
+        link: "https://gemini.google.com/app"
+      },
+      {
+        name: "LmArena.AI",
+        description: "Comparaison et test de différents modèles IA.",
+        link: "https://lmarena.ai/"
+      }
+    ]
+  },
+  {
+    title: "Développement & Outils",
+    icon: "code-slash-outline",
+    items: [
+      {
+        name: "Visual Studio Code",
+        description: "Éditeur de code principal pour tous mes projets.",
+        link: "https://code.visualstudio.com/"
+      },
+      {
+        name: "GitHub",
+        description: "Gestion de version et hébergement de mes projets.",
+        link: "https://github.com/Trq-Builds"
+      },
+      {
+        name: "Netlify",
+        description: "Déploiement et hébergement de sites web statiques.",
+        link: "https://app.netlify.com/"
+      },
+      {
+        name: "RepoTreeGenerator",
+        description: "Générateur d'arborescence ASCII pour documentation.",
+        link: "https://ascii-repotree.vercel.app/generator"
+      }
+    ]
+  },
+  {
+    title: "Documentation & Organisation",
+    icon: "document-text-outline",
+    items: [
+      {
+        name: "Notion",
+        description: "Organisation de mes notes et planning de projets.",
+        link: "https://notion.so"
+      },
+      {
+        name: "Markdown",
+        description: "Format de documentation pour tous mes README et guides.",
+        link: ""
+      },
+      {
+        name: "Draw.io",
+        description: "Création de schémas réseau et diagrammes techniques.",
+        link: "https://app.diagrams.net/"
+      }
+    ]
+  }
+];
+
+
 export const portfolioData = [
   {
     title: "Documentation AD",
