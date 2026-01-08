@@ -137,23 +137,23 @@ style.css
 ## `⚙️`︲**Fonctionnalités Techniques :**
 
 ```markdown
-// Pseudo-code des fonctionnalités principales
+// Pseudo-code des fonctionnalités principales : 
 
-├── 🎨︲Theme Toggle.
+├── 🎨︲Theme Toggle :
 │   ├── Détection préférence système (prefers-color-scheme).
 │   ├── Sauvegarde localStorage.
 │   └── Toggle class sur <body>.
 
-├── 📄︲Navigation SPA.
+├── 📄︲Navigation SPA :
 │   ├── Pas de rechargement de page.
 │   ├── Injection HTML dynamique.
 │   └── Gestion des sections (About, Resume, Projects, Contact).
 
-├── 🔍︲Système de Filtres (Portfolio).
+├── 🔍︲Système de Filtres (Portfolio) :
 │   ├── Filtrage par catégorie.
 │   └── Animation de transition.
 
-└── 📱︲Responsive Design.
+└── 📱︲Responsive Design :
     ├── Mobile First (ou Desktop First).
     ├── Breakpoints multiples.
     └── Sidebar collapsible.
@@ -213,3 +213,4 @@ style.css
 - ` 🌐 ` **︲VisualStudioCode** ︲[`🌐`](https://code.visualstudio.com/)
 
 ---
+
