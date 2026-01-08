@@ -184,11 +184,7 @@ style.css
 
 ## ` 🔻 `︲**Améliorations prévues :**
 
-- ` 🔴 `︲**Section Portfolio à remplir avec les projets...**
-
 - ` 🔴 `︲**Rendre la section Projets plus Jolie...**
-
-- ` 🔴 `︲**Rajouter une Rubrique "Stage".**
 
 - ` 🔴 `︲**Ajout des Items suivants : TP-DNS, TP-KALI, Item-GLPI, Install-Debian, Install-Windows-11-Server, Install Windows-11, dans la section "Projets" avec __Documentation Technique .MD sur GitHub pour chaque Item__.**
 - ` 🔴 `︲Modification du code couleur du site, problèmes de lisibilité...
@@ -233,6 +229,7 @@ style.css
 ```
 
 ---
+
 
 
 
